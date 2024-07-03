@@ -1,16 +1,16 @@
-function receivesAFunction (iAmTired){
-    return iAmTired();
-}
-iAmTired(function () {return 'Time for bed!'});
+function receivesAFunction(testTime){
+    return testTime()
+};
+function testTime(){
+    console.log = 'Time to Study!'
+};
 
-
-
-function returnsANamedFunction (){
-    return function riseAndShine(){ 
+function returnsANamedFunction(){
+    return function partyTime(){
     }
-}
+};
 
-function returnsAnAnonymousFunction (){
+function returnsAnAnonymousFunction(){
     return function(){
 
     }
